@@ -1,0 +1,151 @@
+/* Common styles for all devices */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.bg-container {
+    margin: 10px;
+    background-size: cover;
+    height: 100vh;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    background-color: rgb(214, 88, 88);
+    color: black;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 20px;
+}
+
+.menu-bar {
+    height: 30px;
+    width: 30px;
+}
+
+.card-container {
+    background-image: linear-gradient(to left, rgb(224, 224, 128), pink);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    flex: 1;
+}
+
+.robin {
+    height: 70vh;
+    width: 50vw;
+    object-fit: cover;
+}
+
+
+.button {
+    background-color: rgb(179, 14, 42);
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styles for the second container */
+.bg-container2 {
+    padding-top: 50px;
+    background-image: linear-gradient(to left, rgb(224, 224, 128), pink);
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    background-size: cover;
+    height: auto;
+}
+
+.card-images {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+}
+
+.l-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.l-img {
+    height: 35vh;
+    width: 25vw;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.r-img {
+    height: 72vh;
+    width: 30vw;
+    object-fit: cover;
+}
+
+.r-card {
+    background-color: rgb(209, 96, 96);
+    height: 30vh;
+    width: 30vw;
+    padding: 20px;
+    margin: 10px;
+    font-style:italic;
+    color: rgb(5, 5, 5);
+    font-family:monospace
+}
+
+.btn {
+    background-color: rgb(222, 101, 101);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.arrow {
+    margin-left: 5px;
+}
+
+/* Media queries for devices with max-width: 480px */
+@media screen and (max-width: 480px) {
+    .bg-container2 {
+        padding: 20px;
+    }
+
+    .robin {
+        height: 20vh;
+        width: 20vw;
+    }
+
+    .l-img,
+    .r-img {
+        width: 100%;
+    }
+
+    .r-card {
+        height: auto;
+    }
+}
+
+/* Media queries for devices with max-width: 769px */
+@media screen and (max-width: 769px) {
+    .bg-container2 {
+        padding: 20px;
+    }
+
+    .robin {
+        height: 50vh;
+    }
+}
